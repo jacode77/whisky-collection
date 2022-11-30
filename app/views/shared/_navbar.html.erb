@@ -16,22 +16,22 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Countries
           </a>
+        </li>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">America</a></li>
             <li><a class="dropdown-item" href="#">Ireland</a></li>
             <li><a class="dropdown-item" href="#">Japan</a></li>
             <li><a class="dropdown-item" href="#">Scotland</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">
             <% if user_signed_in? %>
-                <div>Welcome <%= current_user.email %> </div>
-                <%= button_to "Sign Out", destroy_user_session_path, method: :delete %> 
+            <li class="nav-item">
+                <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"nav-link" %> 
+            </li>
             <% else %>
-                <%= button_to "Log In", new_user_session_path %>
+            <li class="nav-item">
+                <%= link_to "Log In", new_user_session_path, class:"nav-link" %>
+            </li>
             <% end %>
-          </a>
         </li>
       </ul>
       <form class="d-flex" role="search">
