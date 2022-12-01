@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+types = ["Single Malt Whisky", "Grain Whisky", "Blended Whisky" ]
+
+if Type.count == 0 
+    types.each do |t|
+        Type.create(name: t)
+        puts "Created #{t} type"
+    end
+end
