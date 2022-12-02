@@ -32,3 +32,6 @@ if Brand.count == 0
         puts "Created #{b}"
     end
 end
+
+# Listing.create(user_id: 1, type_id: 1, brand_id: 2, country_id: 4, title: "Glenmorangie 30 Years - Oloroso Sherry Finish", price: 550000
+#     00, year: 2004, sold: false, description: "First filled into ex-Bourbon hogsheads in 1972, it was married in Oloroso sherry butts from December 1989 and bottled without chill filtration at cask strength in 2004.")
