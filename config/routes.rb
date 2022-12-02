@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root to: "pages#index"
   get "/restricted", to: "pages#restricted"
+  get "/listings", to: "listings#index", as: "listings"
 end
